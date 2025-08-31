@@ -8,7 +8,7 @@ header {
     background-image: url(assets/images/hero.png);
     height: 100vh;
     background-size: cover;
-    background-position: center bottom;
+    background-position: center;
     position: relative;
 }
 
@@ -39,6 +39,27 @@ header::after {
     width: 100%;
 }
 
+.green {
+    color: #01D28E;
+}
+
+.offcanvas-header i {
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.offcanvas {
+    box-shadow: -10px 0 20px -10px rgba(0, 0, 0, 0.1);
+}
+
+.offcanvas-header i:hover {
+    color: #CED4DA !important;
+}
+
+.offcanvas-backdrop.show {
+  background-color: transparent !important;
+}
+
 .about-section {
     padding: 80px 0px;
 }
@@ -48,7 +69,7 @@ header::after {
     padding: 80px 0px;
 }
 
-.works-section{
+.works-section {
     padding: 80px 0px;
 }
 
@@ -69,7 +90,7 @@ header::after {
     box-shadow: 0 4px 30px -5px rgba(0, 0, 0, 0.2);
 }
 
-.work-card::after{
+.work-card::after {
     content: "";
     position: absolute;
     top: 0px;
@@ -77,15 +98,10 @@ header::after {
 
 }
 
-.work-card:hover{
+.work-card:hover {}
 
-}
-
-.work-card{
+.work-card {
     width: 350px;
+    height: 200px;
     position: relative;
-}
-
-.work-card img{
-    width: 100%;
 }

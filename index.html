@@ -16,9 +16,30 @@
 <body>
     <header class="">
         <nav class="navbar">
-            <div class="container-fluid justify-content-around">
+            <div class="container justify-content-between">
                 <span class="navbar-brand mb-0 fs-3 fw-bolder text-white z-1">Mighty.</span>
-                <span class="text-white z-1"><i class="fa-solid fa-bars fs-3"></i></span>
+
+                <button class="btn z-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu"
+                    aria-controls="offcanvasMenu">
+                    <span class="text-white"><i class="fa-solid fa-bars fs-4"></i></span>
+                </button>
+
+                <div class="offcanvas offcanvas-end border-0 w-25" id="offcanvasMenu" tabindex="-1"
+                    aria-labelledby="offcanvasMenuLabel" data-bs-scroll="true">
+                    <div class="offcanvas-header mt-3 me-2">
+                        <i class="fa-solid fa-xmark ms-auto fs-4" data-bs-dismiss="offcanvas" aria-label="Close"></i>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="list-group gap-2 fs-5 fw-medium">
+                            <li class="list-group-item border-0 green">Home</li>
+                            <li class="list-group-item border-0">About</li>
+                            <li class="list-group-item border-0">Work</li>
+                            <li class="list-group-item border-0">Journal</li>
+                            <li class="list-group-item border-0">Contact</li>
+                        </ul>
+                    </div>
+                </div>
+
             </div>
         </nav>
         <div
@@ -30,18 +51,18 @@
         </div>
     </header>
     <main>
-        <div class="about-section container-fluid d-flex justify-content-center align-items-center row">
-            <div class="about-side-1 col">
+        <div class="about-section container mx-auto d-flex flex-wrap align-items-center gap-lg-0 gap-4">
+            <div class="about-side-1 col-lg-4 col-12 px-3">
                 <h3>About Us</h3>
                 <p class="mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae voluptatem mollitia
                     obcaecati quod maxime. Soluta libero eligendi voluptatum, natus debitis.</p>
                 <p class="mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, quasi!</p>
                 <div class="btn rounded-5 mt-3 text-white fw-bold px-5 py-2">Our works</div>
             </div>
-            <div class="about-side-2 col">
+            <div class="about-side-2 col-lg-4 col-10 px-3">
                 <img src="assets/images/about.png" alt="">
             </div>
-            <div class="about-side-3 col">
+            <div class="about-side-3 col-lg-4 col-12 px-3">
                 <h3>Our expertise and skills</h3>
                 <div class="d-flex justify-content-between mt-4">
                     <div class="left-progress">Writing</div>
@@ -89,28 +110,32 @@
                     <i class="fa-solid fa-desktop fs-3 text-center"></i>
                     <div class="card-body mt-3">
                         <h5 class="card-title text-center">Web Design</h5>
-                        <p class="card-text text-center mt-3">Lorem ipsum dolor sit amet. Consectetur adipisicing elit Eaque commodi.</p>
+                        <p class="card-text text-center mt-3">Lorem ipsum dolor sit amet. Consectetur adipisicing elit
+                            Eaque commodi.</p>
                     </div>
                 </div>
                 <div class="card border-0 py-4 justify-content-center align-items-center" style="width: 15rem;">
                     <i class="fa-solid fa-desktop fs-3 text-center"></i>
                     <div class="card-body mt-3">
                         <h5 class="card-title text-center">Graphic Design</h5>
-                        <p class="card-text text-center mt-3">Lorem ipsum dolor sit amet. Consectetur adipisicing elit Eaque commodi.</p>
+                        <p class="card-text text-center mt-3">Lorem ipsum dolor sit amet. Consectetur adipisicing elit
+                            Eaque commodi.</p>
                     </div>
                 </div>
                 <div class="card border-0 py-4 justify-content-center align-items-center" style="width: 15rem;">
                     <i class="fa-solid fa-desktop fs-3 text-center"></i>
                     <div class="card-body mt-3">
                         <h5 class="card-title text-center">Web Apps</h5>
-                        <p class="card-text text-center mt-3">Lorem ipsum dolor sit amet. Consectetur adipisicing elit Eaque commodi.</p>
+                        <p class="card-text text-center mt-3">Lorem ipsum dolor sit amet. Consectetur adipisicing elit
+                            Eaque commodi.</p>
                     </div>
                 </div>
                 <div class="card border-0 py-4 justify-content-center align-items-center" style="width: 15rem;">
                     <i class="fa-solid fa-desktop fs-3 text-center"></i>
                     <div class="card-body mt-3">
                         <h5 class="card-title text-center">Ecommerce</h5>
-                        <p class="card-text text-center mt-3">Lorem ipsum dolor sit amet. Consectetur adipisicing elit Eaque commodi.</p>
+                        <p class="card-text text-center mt-3">Lorem ipsum dolor sit amet. Consectetur adipisicing elit
+                            Eaque commodi.</p>
                     </div>
                 </div>
             </div>
@@ -123,23 +148,23 @@
                 <hr class="mt-2" style="width: 70px !important; background-color: black !important; height: 2px;">
             </div>
             <div class="work-cards mt-5 gap-4 d-flex justify-content-center flex-wrap">
-                <div class="work-card-1 work-card">
-                    <img class="rounded" src="assets/images/work-1.png" alt="">
+                <div class="work-card-1 work-card d-flex justify-content-center align-items-center" style="background-image: url(assets/images/work-1.png); background-position: center; background-size: cover;">
+                    <i class="fa-solid fa-plus text-white fs-5 d-none"></i>
                 </div>
-                <div class="work-card-2 work-card">
-                    <img class="rounded" src="assets/images/work-2.png" alt="">
+                <div class="work-card-2 work-card d-flex justify-content-center align-items-center" style="background-image: url(assets/images/work-2.png); background-position: center; background-size: cover;">
+                    <i class="fa-solid fa-plus text-white fs-5 d-none"></i>
                 </div>
-                <div class="work-card-3 work-card">
-                    <img class="rounded" src="assets/images/work-3.png" alt="">
+                <div class="work-card-3 work-card d-flex justify-content-center align-items-center" style="background-image: url(assets/images/work-3.png); background-position: center; background-size: cover;">
+                    <i class="fa-solid fa-plus text-white fs-5 d-none"></i>
                 </div>
-                <div class="work-card-4 work-card">
-                    <img class="rounded" src="assets/images/work-4.png" alt="">
+                <div class="work-card-4 work-card d-flex justify-content-center align-items-center" style="background-image: url(assets/images/work-4.png); background-position: center; background-size: cover;">
+                    <i class="fa-solid fa-plus text-white fs-5 d-none"></i>
                 </div>
-                <div class="work-card-5 work-card">
-                    <img class="rounded" src="assets/images/work-5.png" alt="">
+                <div class="work-card-5 work-card d-flex justify-content-center align-items-center" style="background-image: url(assets/images/work-5.png); background-position: center; background-size: cover;">
+                    <i class="fa-solid fa-plus text-white fs-5 d-none"></i>
                 </div>
-                <div class="work-card-6 work-card">
-                    <img class="rounded" src="assets/images/work-6.png" alt="">
+                <div class="work-card-6 work-card d-flex justify-content-center align-items-center" style="background-image: url(assets/images/work-6.png); background-position: center; background-size: cover;">
+                    <i class="fa-solid fa-plus text-white fs-5 d-none"></i>
                 </div>
             </div>
         </div>
